@@ -1,0 +1,295 @@
+/*
+Theme Name: ThreeUsTheme
+Theme URI: http://threeusteam.com/
+Author: ThreeUs
+Author URI: http://threeusteam.com/
+Description: Theme Name is a WordPress shopping theme designed for WooCommerce. The theme is ideal for supermarkets, shopping malls or convenience stores with loads of product categories.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: text_domain
+Tags: one-column, two-columns, three-columns, left-sidebar, right-sidebar, fixed-layout, custom-header, custom-background, custom-menu, editor-style, featured-images, microformats, post-formats
+
+The styleheets of Theme Name are located in assets/css.
+IMPORTANT : If you write your CSS code below, it will be deleted when you'll update the theme.
+*/
+
+/*	################################################################
+	CSS OVERVIEW 	
+
+	1. IMPORT FILES
+	2. GENERAL
+	3. ELEMENTS
+	4. HEADER
+	5. FOOTER
+	...
+
+################################################################# */ 
+
+/*==========================================================
+	1. IMPORT FILES
+==========================================================*/
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+/* Css */
+@import url(libs/font-awesome/css/font-awesome.min.css);
+@import url(libs/bootstrap/css/bootstrap.min.css);
+
+/*==========================================================
+	2. GENERAL
+==========================================================*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	border: 0;
+	font-size: 100%;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+body{
+	font-size: 14px;
+	color: #757575;
+	font-family: 'Montserrat', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: bold;
+}
+h1 {
+	font-size: 24px;
+}
+h2 {
+	font-size: 20px;
+}
+h3 {
+	font-size: 18px;
+}
+h4 {
+	font-size: 16px;
+}
+h5 {
+	font-size: 14px;
+}
+h6 {
+	font-size: 12px;
+}
+img{
+	border:none;
+	max-width:100%;	
+	height: auto;
+}
+a{
+	color:#373737;
+}
+a:hover{
+	text-decoration:none;
+}
+a:focus{
+	text-decoration: none;
+	outline: none;
+}
+a, 
+button, 
+input {
+	transition: all 0.3s ease-in-out 0s;
+	-moz-transition: all 0.3s ease-in-out 0s;
+	-o-transition: all 0.3s ease-in-out 0s;
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	-ms-transition: all 0.3s ease-in-out 0s;
+}
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=number],
+input[type=search],
+textarea {
+	border: 1px solid #d5d5d5;
+	padding: 8px 15px;
+	font-size: 14px;
+	color: #757575;
+	font-style: italic;
+	border-radius: 0;
+}
+button,
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=password]:focus,
+input[type=number]:focus,
+input[type=search]:focus,
+textarea:focus {
+	border-color: #c9a96e;
+	outline: none;
+}
+.table > tbody > tr > td, 
+.table > tbody > tr > th, 
+.table > tfoot > tr > td, 
+.table > tfoot > tr > th, 
+.table > thead > tr > td, 
+.table > thead > tr > th {
+	border-color: #FCD998;
+}
+
+/*==========================================================
+	3. ELEMENTS
+==========================================================*/
+
+/*==========================================================
+	4. HEADER
+==========================================================*/
+.site-header{
+	margin: 0;
+	padding: 0;
+	border-bottom: 1px solid #ddd;
+}
+.top-header{
+	background: #b06010;
+	padding:10px 0;
+}
+.header-welcome{
+	float: left;
+	font-size: 13px;
+	line-height: 34px;
+	color:#8d97ad;
+	font-weight: bold;
+}
+.header-welcome a{
+	color:white;
+	font-size: 13px;
+	line-height: 34px;
+	font-weight: bold;
+}
+/*.right-header{
+	float: right;
+}
+.right-header ul{
+	display: inline-block;
+}
+.right-header li{
+	display: inline-block;
+	margin-right: 13px;
+}
+.right-header li a{
+	font-size: 13px;
+	line-height: 34px;
+	font-weight: bold;
+	color:#8d97ad;
+}
+.right-header li:first-child a{
+	border-right: 1px solid #8d97ad;
+	padding-right:13px;
+}
+.right-header li:last-child a i{
+	font-size: 15px;
+	line-height: 34px;
+}*/
+.menu{
+	padding:20px 0;
+}
+.left-header-menu{
+	float: left;
+}
+.left-header-menu .site-brand{
+	display: inline-block;
+}
+.left-header-menu .main-menu{
+	display: inline-block;
+	margin-left: 40px;
+}
+
+.left-header-menu .main-menu li{
+	display: inline-block;
+	margin-right: 30px;
+	position: relative;
+}
+.left-header-menu .main-menu li:last-child{
+	margin-right: 0;
+}
+.left-header-menu .main-menu li a{
+	font-size: 15px;
+	line-height: 34px;
+	color:#8d97ad;
+	font-weight: bold;
+}
+.left-header-menu .main-menu li i{
+	padding: 8px;
+}
+.left-header-menu .main-menu li.current-item-menu a,
+.left-header-menu .main-menu li:hover a{
+	color:#3e4555;
+}
+.main-menu .submenu{
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 200px;
+	text-align: left;
+	background: rgba(0,0,0,0.9);
+	padding: 10px 15px;
+	opacity: 0;
+	visibility: hidden;
+	transition:all 0.3 ease-in-out 0s;
+	-ms-transition:all 0.3 ease-in-out 0s;
+	-o-transition:all 0.3 ease-in-out 0s;
+	-webkit-transition:all 0.3 ease-in-out 0s;
+	-moz-transition:all 0.3 ease-in-out 0s;
+	transition: 
+}
+.main-menu li:hover > .submenu {
+	opacity: 1;
+	visibility: visible;
+	margin-top: 0;
+
+}
+.main-menu li:hover > .submenu a{
+	color:#fff;
+}
+.main-menu .submenu li {
+	margin: 0;
+	display: block;
+}
+.main-menu .submenu li a{
+	display: block;
+	border-bottom: 1px solid #D7D7D7;
+	padding:3px 0;
+}
+.main-menu .submenu li:last-child a{
+	border-bottom: none;
+}
+.main-menu .submenu .submenu {
+	top: 0;
+	left:100%;
+	margin-left: 15px;
+}
+.right-header-menu{
+	float: right;
+}
+.right-header-menu ul li{
+	display: inline-block;
+	border:1px solid #8d97ad;
+	border-radius: 3px;
+	padding: 13px 25px;
+	margin-right: 13px;
+}
+.right-header-menu ul li:last-child{
+	background: linear-gradient(to right,#ff4e7d,#ff695c);
+	margin-right: 0;
+	border-color: transparent;
+}
+.right-header-menu ul li:last-child a{
+	color:#fff;
+}
+.right-header-menu ul li a{
+	font-size: 14px;
+	font-weight: bold;
+}
